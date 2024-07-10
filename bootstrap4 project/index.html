@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Enthusiasts</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-brand, .nav-link {
+            color: #f4f4f9 !important;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .card {
+            border: none;
+        }
+        .card-title {
+            color: #333;
+        }
+        .card-text {
+            color: #555;
+        }
+        .btn-primary {
+            background-color: #555;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #333;
+        }
+        .feature-img {
+            height: 250px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: #f4f4f9;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Car Enthusiasts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#models">Car Models</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-center py-5 bg-dark text-light">
+        <div class="container">
+            <h1 class="display-4">Welcome to Car Enthusiasts</h1>
+            <p class="lead">Discover the latest models, view stunning car galleries, and connect with fellow car lovers.</p>
+            <a href="#models" class="btn btn-primary">Explore Models</a>
+        </div>
+    </section>
+
+    <!-- Car Models -->
+    <section id="models" class="container my-5">
+        <h2 class="text-center">Latest Car Models</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://economictimes.indiatimes.com/photo/31045699.cms?from=mdr" class="card-img-top feature-img" alt="Car Model 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Model 1</h5>
+                        <p class="card-text">Description of car model 1. High performance, luxury, and innovation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx" class="card-img-top feature-img" alt="Car Model 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Model 2</h5>
+                        <p class="card-text">Description of car model 2. Combining style, comfort, and speed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://d2m3nfprmhqjvd.cloudfront.net/blog/20220228142243/ezgif.com-gif-maker-98-5.jpg" class="card-img-top feature-img" alt="Car Model 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Model 3</h5>
+                        <p class="card-text">Description of car model 3. The epitome of modern engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container my-5">
+        <h2 class="text-center">Car Gallery</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/car-2179220_960_720.jpg" class="img-fluid mb-4" alt="Car 1">
+            </div>
+            <div class="col-md-4">
+                <img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_960_720.jpg" class="img-fluid mb-4" alt="Car 2">
+            </div>
+            <div class="col-md-4">
+                <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/100-best-luxury-cars.jpg?itok=wCsUrm0B" class="img-fluid mb-4" alt="Car 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form class="w-50 mx-auto">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Car Enthusiasts. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
